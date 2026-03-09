@@ -75,19 +75,19 @@ Creates a new user.
 Request body:
 ```json
 {
-  "name": "David",
-  "email": "David@email.com"
+  "name":"Jenny",
+  "email":"Jenny@gmail.com"
 }
 ```
 
 Example response:
 ```json
 {
-  "id": 1,
-  "name": "David",
-  "email": "David@email.com",
-  "createdAt": "2026-03-09T14:28:01.181Z",
-  "updatedAt": "2026-03-09T14:28:01.181Z"
+    "id": 1,
+    "name": "Jenny",
+    "email": "Jenny@gmail.com",
+    "updatedAt": "2026-03-09T22:02:24.239Z",
+    "createdAt": "2026-03-09T22:02:24.239Z"
 }
 ```
 
@@ -99,13 +99,13 @@ Returns all users.
 Example response:
 ```json
 [
-  {
-    "id": 1,
-    "name": "David",
-    "email": "David@email.com",
-    "createdAt": "2026-03-09T14:28:01.181Z",
-    "updatedAt": "2026-03-09T14:28:01.181Z"
-  }
+    {
+        "id": 1,
+        "name": "Jenny",
+        "email": "Jenny@gmail.com",
+        "createdAt": "2026-03-09T22:02:24.239Z",
+        "updatedAt": "2026-03-09T22:02:24.239Z"
+    }
 ]
 ```
 
@@ -139,7 +139,7 @@ Request body:
 {
   "title": "Go for a vacation",
   "description": "Go to Switzerland",
-  "dueDate": "2026-04-15",
+  "dueDate": "2026-03-24",
   "userId": 1
 }
 ```
@@ -151,10 +151,10 @@ Example response:
   "id": 1,
   "title": "Go for a vacation",
   "description": "Go to Switzerland",
-  "dueDate": "2026-04-15T00:00:00.000Z",
+  "dueDate": "2026-03-24T00:00:00.000Z",
   "userId": 1,
-  "updatedAt": "2026-02-11T14:35:00.000Z",
-  "createdAt": "2026-02-11T14:35:00.000Z"
+  "updatedAt": "2026-03-09T22:05:23.259Z",
+  "createdAt": "2026-03-09T22:05:23.259Z"
 }
 ```
 
@@ -168,19 +168,14 @@ Example response:
 [
   {
     "id": 1,
-    "title": "Finish Assignment",
-    "description": "Complete sequelize homework",
+    "title": "Go for a vacation",
+    "description": "Go to Switzerland",
     "status": "pending",
-    "dueDate": "2026-03-12T00:00:00.000Z",
-    "createdAt": "2026-03-09T14:35:00.000Z",
-    "updatedAt": "2026-03-09T14:35:00.000Z",
-    "userId": 1,
+    "dueDate": "2026-03-24T00:00:00.000Z",
     "User": {
       "id": 1,
-      "name": "John",
-      "email": "John@gmail.com",
-      "createdAt": "2026-03-09T14:28:01.181Z",
-      "updatedAt": "2026-03-09T14:28:01.181Z"
+      "name": "Jenny",
+      "email": "Jenny@gmail.com"
     }
   }
 ]
